@@ -10,6 +10,7 @@
     font-size: 1.8rem;
     font-weight: bolder;
     font-family: 'Dangrek', cursive;
+    cursor: pointer;
 }
 
 .widgets{
@@ -42,6 +43,10 @@
 }
 
 .widgetButton:hover{
-    background-color: var(--blackColor);
+    background-color: var(--greyColor);
     color: var(--whiteColor);
+}
+
+.widgetButton:focus{
+    outline: none;
 }

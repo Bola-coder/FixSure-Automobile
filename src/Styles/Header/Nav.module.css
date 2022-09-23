@@ -1,0 +1,24 @@
+.nav{
+   
+    background-color: var(--greyColor);
+}
+
+.nav__contents{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.nav__content{
+    color: var(--whiteColor);
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color .5s;
+}
+
+.nav__content:hover{
+    color: var(--mainColor);
+}
