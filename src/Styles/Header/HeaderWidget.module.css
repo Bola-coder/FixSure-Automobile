@@ -1,8 +1,9 @@
 .headerWidgets{
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 20vh;
 }
 
 .logo{
