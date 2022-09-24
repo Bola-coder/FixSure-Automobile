@@ -1,0 +1,31 @@
+.bannerCta{
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: -25px;
+    left: 10%;
+    
+}
+
+.bannerCta__text{
+    font-size: 1.7rem;
+}
+
+.bannerCta__button{
+    padding: 15px;
+    background-color: var(--greyColor);
+    color: var(--whiteColor);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.bannerCta__button:hover{
+    opacity: 0.9;
+}
