@@ -19,17 +19,21 @@
     font-weight: 500;
     letter-spacing: 1px;
     margin-bottom: 15px;
+    animation: moveInFromLeft 0.8s ease-in;
 }
 
 .firstBanner__text p{
     font-size: 3rem;
     font-weight: 700;
+    animation: moveInFromRight 0.5s ease-in;
+
 }
 
 .firstBanner__buttons{
     padding: 10px;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 15%;
+    animation: moveInFromLeft 0.8s ease-in;
 }
 
 .firstBanner__buttons button{
@@ -59,4 +63,32 @@
 .firstBanner__buttons .contactBtn:hover{
     border: none;
     background-color: var(--mainColor);
+}
+
+@keyframes moveInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20rem); 
+    }
+      /* 80% {
+        transform: translateX(2rem);
+     } */
+      100% {
+        opacity: 1;
+        transform: translate(0);
+     }
+}
+
+@keyframes moveInFromRight {
+    0%{
+        opacity: 0;
+        transform: translateX(20rem);
+    }
+    /* 80%{
+        transform: translateX((-2rem));
+    } */
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
 }
