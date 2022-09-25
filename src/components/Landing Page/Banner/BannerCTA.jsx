@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./../../Styles/Banner/BannerCTA.module.css";
+import styles from "./../../../Styles/Banner/BannerCTA.module.css";
 
 const bannerCTA = () => {
   return (

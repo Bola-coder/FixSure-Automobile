@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./../../Styles/Banner/FirstBanner.module.css";
+import styles from "./../../../Styles/Banner/FirstBanner.module.css";
 
 const FirstBanner = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./../../Styles/Header/HeaderWidget.module.css";
+import styles from "./../../../Styles/Header/HeaderWidget.module.css";
 
 const HeaderWidget = () => {
   return (
