@@ -1,20 +1,20 @@
-.secondBanner{
+.thirdBanner{
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    margin-left: 7%;
+    margin-left: 45%;
 }
 
-.secondBanner__text{
+.thirdBanner__text{
     /* text-align: center; */
     padding: 10px;
-    margin-top: 12%;
+    margin-top: 22%;
     color: var(--whiteColor);
 }
 
-.secondBanner__text h3{
+.thirdBanner__text h3{
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 3px;
@@ -22,19 +22,19 @@
     animation: moveInFromLeft 0.8s ease-out;
 }
 
-.secondBanner__text p{
+.thirdBanner__text p{
     font-size: 3.5rem;
     font-weight: 700;
     /* animation: moveInFromRight 0.5s ease-out; */
 
 }
-.secondBanner__buttons{
+.thirdBanner__buttons{
     padding: 10px;
     margin-top: 2%;
     margin-bottom: 15%;
     animation: moveInFromRight 0.8s ease-out;
 }
-.secondBanner__buttons button{
+.thirdBanner__buttons button{
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -43,22 +43,15 @@
     font-size: 1.2rem;
 }
 
-.secondBanner__buttons .quoteBtn{
-    background-color: var(--mainColor);
-    color: var(--whiteColor);
-}
 
-.secondBanner__buttons .learnMoreBtn{
+.thirdBanner__buttons .serviceBtn{
     border: 2px solid var(--mainColor);
     color: var(--whiteColor);
     background-color: transparent;
 }
 
-.secondBanner__buttons .quoteBtn:hover{
-    background-color: var(--greyColor);
-}
 
-.secondBanner__buttons .learnMoreBtn:hover{
+.thirdBanner__buttons .serviceBtn:hover{
     border: none;
     background-color: var(--mainColor);
 }
