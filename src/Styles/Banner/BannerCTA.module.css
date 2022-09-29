@@ -1,14 +1,14 @@
 .bannerCta{
     width: 80%;
     margin: 0 auto;
-    padding: 15px;
+    padding: 20px;
     background-color: var(--mainColor);
     color: var(--whiteColor);
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    bottom: -25px;
+    bottom: -40px;
     left: 10%;
     border-radius: 2px;
     
