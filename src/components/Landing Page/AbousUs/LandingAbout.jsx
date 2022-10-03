@@ -2,7 +2,6 @@ import React from "react";
 import {
   FaTrophy,
   FaThumbsUp,
-  FaTeamspeak,
   FaUsers,
   FaGripLines,
 } from "react-icons/fa";

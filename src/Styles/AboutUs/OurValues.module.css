@@ -1,3 +1,85 @@
 .ourValues{
     flex: 1;
+    padding: 20px;
+    margin-top: 1%;
 }
+
+.ourValues__head{
+    font-size: 2rem;
+    font-weight: bolder;   
+    opacity: 0.9;
+}
+
+.ourValuesText{
+    margin-top: 10px;
+    width: 90%;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.ourValuesFaq{
+    padding: 10px;
+}
+
+.faqContent{
+    padding: 10px;
+    cursor: pointer;
+    transition: all 2s;
+
+
+}
+
+.faqQuestion{
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0.9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.angleDown, .angleUp{
+    color: var(--whiteColor); 
+    background-color: var(--blackColor);
+    margin-right: 10px;
+}
+
+.angleUp{
+    display: none;
+}
+
+
+.faqContent.active .angleDown{
+    display: none;
+}
+
+.faqContent.active .angleUp{
+    display: block;
+    background-color: var(--mainColor);
+}
+
+
+.faqAnswer{
+    display: none;
+    border: 1px solid #ddd;
+    padding: 15px;
+    transition: all 2s;
+}
+
+.faqQuestion:active{
+    color: var(--mainColor);
+}
+
+.faqContent.active .faqQuestion{
+    color: var(--mainColor);
+
+}
+
+.faqContent.active .faqAnswer{
+    display: block;
+}
+
+
