@@ -1,6 +1,5 @@
 import React from "react";
 import { FaCar, FaUser, FaClock, FaGlobe } from "react-icons/fa";
-import Images from "./../../../utilities/Images";
 import ChartContent from "./ChartContent";
 import styles from "./../../../Styles/OrganisationCharts/Charts.module.css";
 

@@ -4,13 +4,21 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    margin-left: 7%;
+    background-image: linear-gradient(to right bottom,
+    #1a1b19b3, 
+    #000000c7), 
+    url('/public/images/auto1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: moveInComponent 0.5s;
 }
 
 .secondBanner__text{
     /* text-align: center; */
     padding: 10px;
     margin-top: 12%;
+    margin-left: 7%;
     color: var(--whiteColor);
 }
 
@@ -19,7 +27,7 @@
     font-weight: 300;
     letter-spacing: 3px;
     margin-bottom: 15px;
-    animation: moveInFromLeft 0.8s ease-out;
+    animation: moveInFromLeft 0.8s ease-out 0.5s;
 }
 
 .secondBanner__text p{
@@ -31,8 +39,9 @@
 .secondBanner__buttons{
     padding: 10px;
     margin-top: 2%;
+    margin-left: 7%;
     margin-bottom: 15%;
-    animation: moveInFromRight 0.8s ease-out;
+    animation: moveInFromRight 0.8s ease-out 0.5s;
 }
 .secondBanner__buttons button{
     padding: 12px 20px;
@@ -84,5 +93,15 @@
     100%{
         opacity: 1;
         transform: translate(0);
+    }
+}
+
+@keyframes moveInComponent {
+    0%{
+        transform: translateX(100vw);
+    }
+
+    100%{
+        transform: translateX(0);
     }
 }

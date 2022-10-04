@@ -20,7 +20,7 @@ const Banner = () => {
 
     const myInterval = setInterval(() => {
       handleActiveBanner();
-    }, 3000);
+    }, 4000);
 
     // Cleanup function
     return () => {
@@ -43,7 +43,7 @@ const Banner = () => {
     );
   } else if (activeBanner === 1) {
     return (
-      <section className={`${styles.banner} ${styles.banner2}`}>
+      <section className={styles.banner}>
         <div className={styles.leftAngle}>
           <FaAngleLeft />
         </div>
@@ -56,7 +56,7 @@ const Banner = () => {
     );
   } else {
     return (
-      <section className={`${styles.banner} ${styles.banner2}`}>
+      <section className={styles.banner}>
         <div className={styles.leftAngle}>
           <FaAngleLeft />
         </div>

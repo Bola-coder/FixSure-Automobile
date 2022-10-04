@@ -1,31 +1,11 @@
 .banner{
-    /* background-image:  linear-gradient(to right bottom, var(--lightGreyColor), var(--greyColor)), url('/public/images/auto2.jpg');
-    background-size: cover; */
-    background-image: linear-gradient(to right bottom,
+    background: linear-gradient(to right bottom,
     #1a1b19b3, 
-    #000000c7), 
-    url('/public/images/auto2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    #000000c7); 
     position: relative;
-}
+    overflow-y: hidden;
+}   
 
-.banner.banner2{
-    background-image: linear-gradient(to right bottom,
-    #1a1b19b3, 
-    #000000c7), 
-    url('/public/images/auto1.jpg');
-
-}
-
-.banner.banner3{
-    background-image: linear-gradient(to right bottom,
-    #1a1b19b3, 
-    #000000c7), 
-    url('/public/images/auto3.jpg');
-
-}
 
 .leftAngle{
     position: absolute;
@@ -55,12 +35,5 @@
     font-size: 1.7rem;
 }
 
-@keyframes moveBackgroundImage {
-    0%{
-        opacity: 0;
-    }
 
-    100%{
-        opacity: 1;
-    }
-}
+
