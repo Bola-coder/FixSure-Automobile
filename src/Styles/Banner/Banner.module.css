@@ -3,7 +3,7 @@
     #1a1b19b3, 
     #000000c7); 
     position: relative;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }   
 
 
@@ -28,6 +28,7 @@
 .leftAngle:hover, .rightAngle:hover{
     background-color: var(--mainColor);
     border-radius: 5%;
+    cursor: pointer;
 }
 
 .leftAngle svg, .rightAngle svg{

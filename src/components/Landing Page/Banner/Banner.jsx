@@ -5,19 +5,20 @@ import SecondBanner from "./SecondBanner";
 import ThirdBanner from "./ThirdBanner";
 import BannerCTA from "./BannerCTA";
 import styles from "./../../../Styles/Banner/Banner.module.css";
+import BannerLayout from "./BannerLayout";
 
 const Banner = () => {
   const [activeBanner, setActiveBanner] = useState(0);
-  useEffect(() => {
-    const handleActiveBanner = () => {
-      if (activeBanner >= 0 && activeBanner < 2) {
-        setActiveBanner((prev) => prev + 1);
-      } else if (activeBanner >= 2) {
-        setActiveBanner((prev) => 0);
-      }
-      // console.log(activeBanner);
-    };
 
+  const handleActiveBanner = () => {
+    if (activeBanner >= 0 && activeBanner < 2) {
+      setActiveBanner((prev) => prev + 1);
+    } else if (activeBanner >= 2) {
+      setActiveBanner((prev) => 0);
+    }
+    // console.log(activeBanner);
+  };
+  useEffect(() => {
     const myInterval = setInterval(() => {
       handleActiveBanner();
     }, 4000);
@@ -26,46 +27,41 @@ const Banner = () => {
     return () => {
       clearInterval(myInterval);
     };
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeBanner]);
+
+  const decrementBannerCount = () => {
+    if (activeBanner <= 2 && activeBanner > 0) {
+      setActiveBanner((prev) => prev - 1);
+    } else if (activeBanner === 0) {
+      setActiveBanner((prev) => 0);
+    }
+  };
 
   if (activeBanner === 0) {
     return (
-      <section className={styles.banner}>
-        <div className={styles.leftAngle}>
-          <FaAngleLeft />
-        </div>
-        <div className={styles.rightAngle}>
-          <FaAngleRight />
-        </div>
-        <FirstBanner />
-        <BannerCTA />
-      </section>
+      <BannerLayout
+        banner={<FirstBanner />}
+        incrementFunction={handleActiveBanner}
+        decrementFunction={decrementBannerCount}
+      />
     );
   } else if (activeBanner === 1) {
     return (
-      <section className={styles.banner}>
-        <div className={styles.leftAngle}>
-          <FaAngleLeft />
-        </div>
-        <div className={styles.rightAngle}>
-          <FaAngleRight />
-        </div>
-        <SecondBanner />
-        <BannerCTA />
-      </section>
+      <BannerLayout
+        banner={<SecondBanner />}
+        incrementFunction={handleActiveBanner}
+        decrementFunction={decrementBannerCount}
+      />
     );
   } else {
     return (
-      <section className={styles.banner}>
-        <div className={styles.leftAngle}>
-          <FaAngleLeft />
-        </div>
-        <div className={styles.rightAngle}>
-          <FaAngleRight />
-        </div>
-        <ThirdBanner />
-        <BannerCTA />
-      </section>
+      <BannerLayout
+        banner={<ThirdBanner />}
+        incrementFunction={handleActiveBanner}
+        decrementFunction={decrementBannerCount}
+      />
     );
   }
 };
