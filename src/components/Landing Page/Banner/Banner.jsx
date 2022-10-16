@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+// import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import FirstBanner from "./FirstBanner";
 import SecondBanner from "./SecondBanner";
 import ThirdBanner from "./ThirdBanner";
-import BannerCTA from "./BannerCTA";
-import styles from "./../../../Styles/Banner/Banner.module.css";
+// import BannerCTA from "./BannerCTA";
+// import styles from "./../../../Styles/Banner/Banner.module.css";
 import BannerLayout from "./BannerLayout";
 
 const Banner = () => {

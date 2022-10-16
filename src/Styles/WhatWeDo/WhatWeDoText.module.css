@@ -1,0 +1,30 @@
+.textContainer{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5%;
+}
+
+.icon{
+    font-size: 4rem;
+    color: var(--mainColor);
+}
+
+.text{
+    padding: 20px;
+
+}
+
+.text h4{
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+}
+
+.text p{
+    font-size: 1.32rem;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
